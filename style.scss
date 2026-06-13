@@ -1,0 +1,172 @@
+$color-primary: #217BF4;
+$color-primary-hover: #165ecb;
+$color-dark: rgb(42, 41, 41);
+$color-muted: gray;
+$color-light: rgb(231, 236, 244);
+$color-white: white;
+$color-border: white;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: $color-dark;
+  background-color: $color-white;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin:  auto;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+
+}
+
+.btblue {
+  background-color: $color-primary;
+  color: $color-white;
+  box-shadow: 0 10px 20px rgba($color-primary, 0.15);
+}
+
+.btutline {
+  color: $color-primary;
+  border-color: $color-border;
+}
+
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba($color-border, 0.5);
+
+  .headerap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+
+  .logimg {
+    height: 32px;
+  }
+}
+
+.navigation {
+  .menu {
+    display: flex;
+    gap: 32px;
+
+    .menlink {
+      font-weight: 500;
+      color: $color-muted;
+      font-size: 15px;
+    }
+
+    .dropdown {
+      position: relative;
+      &::after {
+        content: '▾';
+        margin-left: 4px;
+        font-size: 12px;
+        color: $color-muted;
+      }
+    }
+  }
+}
+
+.searcbox {
+  .searnput {
+    padding: 10px 16px;
+    border: none;
+    background-color: rgb(223, 230, 237);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+  }
+}
+
+.hero {
+  padding: 80px;
+
+  .herwrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .herinfo {
+    max-width: 520px;
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: rgba($color-primary, 0.08);
+      color: $color-primary;
+      font-weight: 600;
+      font-size: 12px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 16px;
+      color: $color-muted;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 18px;
+    }
+  }
+
+  .hermage {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.illustration {
+  position: relative;
+  width: 450px;
+  height: 400px;
+}

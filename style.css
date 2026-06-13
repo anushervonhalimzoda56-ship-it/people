@@ -1,0 +1,149 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: rgb(42, 41, 41);
+  background-color: white;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.btblue {
+  background-color: #217BF4;
+  color: white;
+  box-shadow: 0 10px 20px rgba(33, 123, 244, 0.15);
+}
+
+.btutline {
+  color: #217BF4;
+  border-color: white;
+}
+
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header .headerap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.logo .logimg {
+  height: 32px;
+}
+
+.navigation .menu {
+  display: flex;
+  gap: 32px;
+}
+.navigation .menu .menlink {
+  font-weight: 500;
+  color: gray;
+  font-size: 15px;
+}
+.navigation .menu .dropdown {
+  position: relative;
+}
+.navigation .menu .dropdown::after {
+  content: "▾";
+  margin-left: 4px;
+  font-size: 12px;
+  color: gray;
+}
+
+.searcbox .searnput {
+  padding: 10px 16px;
+  border: none;
+  background-color: rgb(223, 230, 237);
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+}
+
+.hero {
+  padding: 80px;
+}
+.hero .herwrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero .herinfo {
+  max-width: 520px;
+}
+.hero .herinfo .badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(33, 123, 244, 0.08);
+  color: #217BF4;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.hero .herinfo .title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero .herinfo .description {
+  font-size: 16px;
+  color: gray;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.hero .herinfo .buttons {
+  display: flex;
+  gap: 18px;
+}
+.hero .hermage {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.illustration {
+  position: relative;
+  width: 450px;
+  height: 400px;
+}/*# sourceMappingURL=style.css.map */
