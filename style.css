@@ -252,4 +252,137 @@ ul {
 .about .abogalery .galstack .gallitem {
   width: 240px;
   height: 180px;
+}
+
+.achievents {
+  padding: 80px;
+  background-color: white;
+}
+.achievents .achieverap {
+  width: 100%;
+}
+.achievents .achieverid {
+  display: grid;
+  grid-template-columns: repeat(2, 1.1fr) 1.3fr;
+  gap: 40px;
+  align-items: center;
+}
+.achievents .featuard {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.achievents .featuard .carheader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+.achievents .featuard .carheader .icon {
+  font-size: 20px;
+  color: #217BF4;
+}
+.achievents .featuard .carheader .caritle {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(42, 41, 41);
+}
+.achievents .featuard .cardext {
+  font-size: 14px;
+  color: gray;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+.achievents .featuard .carik {
+  font-size: 14px;
+  font-weight: 600;
+  color: #217BF4;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.achievents .membereiew {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.achievents .membereiew .avatroup {
+  display: flex;
+}
+.achievents .membereiew .avatroup .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.achievents .membereiew .membecount {
+  font-size: 14px;
+  color: gray;
+}
+.achievents .membereiew .membecount span {
+  color: #217BF4;
+  font-weight: 700;
+}
+.achievents .awaeview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.achievents .awaeview .icothub {
+  font-size: 18px;
+  color: rgb(43, 42, 42);
+}
+.achievents .awaeview .awarext {
+  font-size: 14px;
+  color: gray;
+}
+.achievents .awaeview .awarext span {
+  color: #217BF4;
+  font-weight: 600;
+}
+.achievents .achieveminfo {
+  padding-left: 20px;
+}
+.achievents .achieveminfo .subtitle {
+  display: block;
+  color: #217BF4;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.achievents .achieveminfo .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: rgb(42, 41, 41);
+  margin-bottom: 20px;
+}
+.achievents .achieveminfo .text {
+  font-size: 15px;
+  color: gray;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+.achievents .achieveminfo .btiscover {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #217BF4;
+  color: white;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(33, 123, 244, 0.2);
 }/*# sourceMappingURL=style.css.map */
