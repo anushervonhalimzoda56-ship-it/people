@@ -5,6 +5,7 @@ $color-muted: gray;
 $color-light: rgb(231, 236, 244);
 $color-white: white;
 $color-border: white;
+$color-light-bg:#f8f9fA;
 
 * {
   margin: 0;
@@ -554,6 +555,130 @@ ul {
         color: $color-muted;
         line-height: 1.6;
       }
+    }
+  }
+}
+
+.members {
+  padding: 100px;
+  background-color: $color-white;
+
+  .membeader {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto 40px auto;
+
+    .subtitle {
+      display: block;
+      color: $color-primary;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 34px;
+      font-weight: 700;
+      color: $color-dark;
+      margin-bottom: 16px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: $color-muted;
+      line-height: 1.6;
+    }
+  }
+
+  .membeabs {
+    display: flex;
+    justify-content: center;
+    background-color: rgba($color-primary, 0.05);
+    padding: 8px;
+    border-radius: 14px;
+    max-width: 320px;
+    margin: 0 auto 60px auto;
+
+    .tabtn {
+      flex: 1;
+      padding: 14px 20px;
+      border: none;
+      background: transparent;
+      font-size: 14px;
+      font-weight: 600;
+      color: $color-muted;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 8px 20px rgba($color-primary, 0.2);
+      }
+    }
+  }
+
+  .membergrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .membcard {
+    background-color: $color-white;
+    border-radius: 16px;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+
+    .avatapper {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 25px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .avataimg {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: $color-light-bg;
+      }
+
+      .badgerify {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 22px;
+        height: 22px;
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 50%;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $color-white;
+        box-shadow: 0 4px 8px rgba($color-primary, 0.3);
+      }
+    }
+
+    .membename {
+      font-size: 18px;
+      font-weight: 700;
+      color: $color-dark;
+      margin-bottom: 6px;
+    }
+
+    .membername {
+      font-size: 14px;
+      color: $color-muted;
     }
   }
 }
